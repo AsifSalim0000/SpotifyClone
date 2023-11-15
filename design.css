@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #000000;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+.fullcontainer{
+    display: flex;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+.menu{
+    background-color: #121212;
+    width: 340px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.menu2{
+    background-color: #121212;
+    width: 340px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.menu ul {
+    list-style: none;
+}
+.menu ul li{
+    padding: 10px 0px;
+    color: rgba(255, 255, 255, 0.601);
+    font-weight: bold;
+    font-size: 16px;
+    transition: color .3s;
+}
+.menu ul li:hover{
+    color: rgb(255, 255, 255);
+}
+.spotify-logo img{
+    width :20px;
+}
+.spotify-logo{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+.lib{
+    display: flex;
+}
+.menu2{
+    padding-top: 15px;
+    height: 460px;
+}
+.menu2 button{
+    background-color: #121212;
+    width: 30px;
+    margin-left: 185px;
+    border: none;
+    border-radius: 100%;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.menu2 button:hover{
+    background-color: rgba(131, 126, 126, 0.565);
+}
+.menu2 .lib span{
+    font-weight: bold;
+    color: rgb(255, 255, 255, 0.601);
+}
+.menu2 .lib button span:hover{
+    color: #ffffff;
+}
+.menu2 .lib li{
+    list-style: none;
+}
+.lib span:hover{
+    color: rgb(255, 255, 255);
+}
+.play-podcast{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    overflow: auto;
+
+}
+.crplaylist{
+    color: white;
+    font-weight: bold;
+    margin: 10px 10px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: #242424;
+}
+.crplaylist p{
+    font-weight: normal;
+    margin-top: 15px;
+}
+.crplaylist button{
+    width: auto;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    font-weight: 600;
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+}
+.crplaylist button:hover{
+    transform: scale(1.05);
+    background-color: #ffffff;
+}
+.crplaylist button:active{
+    transform: scale(1);
+    background-color: #7c7575;
+}
+.policies{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 15px;
+    height: 10px;
+}
+.policies a{
+    color: #a0a0a0;
+    font-weight: normal;
+    margin-right: 25px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.policies a:active,.policies a:hover{
+    text-decoration: underline;
+}
+
+.langset{
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.langset button{
+    position: fixed;
+    width: auto;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: #121212;
+    border: solid;
+    border-color: #ffffff86;
+    border-width: 1px;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-left: 0;
+    transition: all ease 0.5s;
+}
+.langset button:hover{
+    background-color: #121212;
+    border-color: #ffffff;
+    transform: scale(1.05);
+}
+.right-section{
+    margin-bottom: 50px;
+    margin-left: 50px;
+    height: 50;
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 360px;
+    right: 0;
+    background-color: #121212;
+    margin: 10px 10px;
+    padding: 10px 25px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    opacity: .9;
+    z-index: 1;
+}
+.twobuttons button{
+    color: #ffffffc4;
+    background-color: #000000;
+    width: 30px;
+    height: 32px;
+    border: none;
+    border-radius: 13px;
+    cursor: not-allowed;
+    margin-right: 10px;
+}
+.tb-right{
+display: flex;
+position: relative;
+align-items: center;
+}
+.tb-right ul{
+    list-style: none;
+}
+.tb-right ul li{
+    display: inline-block;
+    margin: 0px 8px;
+    width: 80px;
+}
+.tb-right ul li a{
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: color .2s,transform .8s;
+}
+.tb-right a:hover{
+    color: #ffffff;
+    transform: scale(1.1);
+ }
+ .tb-right a:active{
+    color: #b3b3b3;
+    transform: scale(1);
+ }
+.divider{
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0px 20px;
+    width: auto;
+}
+.loginb{
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 40px;
+    margin-left: 16px;
+    transition: all ease .3s;
+}
+.loginb:hover{
+    transform: scale(1.05);
+}
+.rightunder{
+    position: fixed;
+    overflow: auto;
+    box-sizing: border-box;
+    top: 5px;
+    left: 360px;
+    right: 0;
+    bottom: 80px;
+    border-radius: 6px;
+    background: linear-gradient(to bottom,#0f0f0f,#121212);
+    margin: 10px 10px;
+    padding: 60px 40px;
+}
+.rightunder h2{
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.spothead{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.spothead a{
+    color: rgba(231, 225, 225, 0.74);
+    font-weight: bold;
+    font-size: 15px;
+    transition: all ease 0.3s;
+}
+.spothead a:hover{
+    text-decoration: underline;
+}
+.playlists{
+    display: flex;
+    direction: column;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.lists{
+    display: flex;
+    direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    min-width: 140px;   
+    width: 200px;
+    height: 280px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all ease 0.4s;
+    position: relative;
+    margin-right: 20px;
+}
+.lists:hover{
+    background-color: #282828;
+}
+.imgcontainer img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.imgcontainer .play{
+    position: absolute;
+    border: none;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(24, 204, 33);
+    border-radius: 100%;
+    cursor: pointer;
+    right: 0;
+    opacity: 0;
+    transition: all ease 0.4s;
+    top: 140px;
+    right: 20px;
+}
+.imgcontainer:hover .play{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+.imgcontainer .play img{
+    width: 60%;
+    padding-top: 20%;
+}
+.lists h4{
+  margin-top: 10px;
+}
+.lists p{
+    color: rgba(255, 255, 255, 0.601);
+    margin-top: 10px;
+
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.679);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+}
+.content h4{
+    color: #ffffff;
+    font-weight: bold;
+}
+.content a{
+    color: rgba(255, 255, 255, 0.601);
+}
+.content a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.socialbuttons{
+    display: flex;
+    margin-top: 50px;
+}
+.socialbuttons button{
+    width: 40px;
+    height: 40px;
+    background-color: #323636;
+    border-radius: 100%;
+    border: none;
+    transition: all ease 0.3s;
+}
+.socialbuttons button:hover{
+    background-color: #a0a0a0;
+    cursor: pointer;
+}
+.socialbuttons img{
+    width: 20px;
+}
+.click{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: all ease .3s;
+}
+.click:active{
+    border-bottom: 3px solid white;  
+}
+.end{
+    margin-top: 18px;
+    color: #a0a0a0;
+    font-weight: bold;
+    font-size: 13px;
+}
+.preview{
+    background: linear-gradient(to right,rgb(255, 0, 234),rgb(0, 132, 255));
+    color: #ffffff;
+    position:fixed;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 35px;
+}
+.prepart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sign-up{
+    background-color: #ffffff;
+    width: 125px;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 2px;
+    border-radius: 25px;
+    border: none;
+    transition: transform .3s;
+
+}
+.sign-up:hover{
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+.sign-up:active{
+    background-color: #ffffff99;
+    transform: scale(1);
+}
+
+
+
